@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bryanbyfield0-creator.github.io/ie-tree-quotes/sitemap.xml
