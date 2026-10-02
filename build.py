@@ -217,7 +217,7 @@ form=f"""<form action="{C.FORM_ACTION}" method="POST">
 <p><button class="btn" type="submit">Send my request</button></p>
 <p class="small">We'll use your information only to connect you with providers for this request. See our <a href="privacy.html">privacy policy</a>.</p></form>"""
 page("contact.html", C.CONTACT_TITLE, C.CONTACT_DESC,
-f'<main class="wrap"><h1>{C.CONTACT_H1}</h1><p>Fill out the form and we\'ll pass your request to independent local {C.PROVIDER_NOUN} providers. There\'s no cost and no obligation.</p><p class="note">{C.CONTACT_NOTE}</p>{form}<p class="small">Prefer to call? {C.PHONE} (optional; the form is the fastest way to reach us).</p></main>', mcta=False)
+f'<main class="wrap"><h1>{C.CONTACT_H1}</h1><p>Fill out the form and we\'ll pass your request to independent local {C.PROVIDER_NOUN} providers. There\'s no cost and no obligation.</p><p class="note">{C.CONTACT_NOTE}</p>{form}</main>', mcta=False)
 
 page("thank-you.html", f"Thanks, we got your request | {SHORT}", f"Thank you for your {C.PROVIDER_NOUN} request. Local providers who serve your area will contact you directly.",
  f'<main class="wrap"><h1>Thanks! Your request was sent.</h1><p>{C.THANKS_TEXT}</p><p><a href="index.html">Back to home</a> · <a href="guides/index.html">Read our guides</a></p></main>', mcta=False)
