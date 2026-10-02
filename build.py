@@ -45,7 +45,7 @@ def page(path, title, desc, body, schema=None):
     canon = f"{BASE}/{path}".replace("index.html","")
     sch = f'<script type="application/ld+json">{json.dumps(schema)}</script>' if schema else ""
     html = f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="QTObMCEV5W0Joa9lOXm7iWNE78Jmfe1DUmOx7eiV0R4" />
 <title>{title}</title><meta name="description" content="{desc}"><link rel="canonical" href="{canon}">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="website">
 <link rel="stylesheet" href="{rel}style.css">{sch}</head><body>
