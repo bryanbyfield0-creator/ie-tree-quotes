@@ -83,6 +83,7 @@ def page(path, title, desc, body, schemas=(), mcta=True):
 <footer><div class="wrap"><p>{C.FOOTER_DISCLOSURE.replace('{rel}',rel)}</p>
 <p><a href="{rel}services.html">Services</a> · <a href="{rel}areas.html">Service Areas</a> · <a href="{rel}guides/index.html">Guides</a> · <a href="{rel}how-it-works.html">How It Works</a> · <a href="{rel}privacy.html">Privacy</a> · <a href="{rel}contact.html">Contact</a></p>
 <p class="small"><strong>Guides:</strong> {guide_links}</p>
+<p class="small">{getattr(C,'SISTER_SITE','')}</p>
 <p class="small">© {YEAR} {BRAND}. {C.FOOTER_AREA}</p>
 <p class="credits">Photos: {credits}, used under free licenses. People shown are not affiliated with this site. <a href="{rel}privacy.html#photos">Photo credits</a></p></div></footer>
 {mcta_html}
