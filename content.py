@@ -213,6 +213,15 @@ CITIES = {
  ["Colton","Riverside","Loma Linda","San Bernardino"],
  [("Why do tree quotes vary so much on Grand Terrace hillside lots?","Access is a big cost factor. Slopes and narrow side yards can mean rigging, more labor, and hand-carrying debris."),],
  [S_4291,S_SBFHSZ]),
+"temecula": C_("Temecula","Riverside",
+ "Temecula sits in southern Riverside County at the Temecula Valley wine country, with neighborhoods from Old Town and the Promenade area out to Pechanga Parkway and the hills toward Cleveland National Forest. Palm trimming, shade-tree pruning, and hillside brush clearance are common requests.",
+ [("Wind through the Temecula Valley", '''<p>Santa Ana winds can push through the Temecula Valley corridor toward the coast. Thinning top-heavy trees and removing deadwood before late fall reduces the chance of limbs landing on roofs, fences, or cars.</p>'''),
+  ("Hillside lots and open space", '''<p>Homes near the eastern and southern hills sit closer to brushy open land. Dead tree removal, limbing up, and clearing dry growth near structures matter more there than in the flatter tract neighborhoods.</p>'''+FIRE_P),
+  ("Palms and newer tracts", '''<p>Many newer Temecula yards have Mexican fan palms and queen palms that need annual dead-frond and seed-pod cleanup. Over-pruning healthy green fronds stresses palms, so ask for dead material only unless a specific reason calls for more.</p>''')],
+ ["Corona","Moreno Valley","Riverside"],
+ [("When should I trim trees before wind season in Temecula?","Santa Ana winds are most common from September through May. Many homeowners schedule thinning and palm cleanup before late fall."),
+  ("Do hillside Temecula homes need brush clearance?","If your parcel is in a mapped fire hazard area, state law requires up to 100 feet of defensible space, and local weed abatement rules may also apply. Check the county fire hazard map for your address.")],
+ [S_NWS,S_4291,S_RIVFHSZ]),
 }
 for k,v in CITIES.items():
     assert v["name"].lower().replace(" ","-")==k, k
@@ -226,7 +235,7 @@ def CITY_FAQ_COMMON(c):
     return [(f"How much does tree removal cost in {c['name']}?", f"It depends on the tree's size, species, condition, how close it is to buildings or power lines, access, and whether you want haul-away and stump grinding. Comparing two or three written quotes from {c['name']}-area providers is the best way to know. See our <a href=\"../guides/tree-removal-cost-inland-empire.html\">tree removal cost guide</a>.")]
 
 HOME_TITLE = "Tree Removal & Palm Trimming Quotes | Inland Empire | IE Tree Quotes"
-HOME_DESC = "Free quotes from local pros for tree removal, trimming, palm trimming, and stump grinding in San Bernardino, Riverside, Fontana, and 15+ Inland Empire cities."
+HOME_DESC = "Free quotes from local pros for tree removal, trimming, palm trimming, and stump grinding in San Bernardino, Riverside, Fontana, and 18+ Inland Empire cities."
 HERO_HTML = '''<h1>Tree removal, trimming & palm tree service quotes in the Inland Empire</h1>
 <p>Tell us about your tree job once and we'll connect you with local tree service providers in San Bernardino, Riverside, Fontana, Redlands, and nearby cities. It's free, and you don't have to hire anyone.</p>
 <ul class="checks"><li>One short request, free quotes from local providers</li><li>Removals, trimming, palms, stumps, storm cleanup</li><li>No cost and no obligation to hire</li></ul>'''
@@ -250,7 +259,7 @@ SERVICES_INTRO = "Here are the most common tree jobs homeowners and property man
 SERVICES_NOTE = "Prices depend on tree size, species, access, and hazards. The only reliable number is a written quote from a licensed, insured provider who has seen the job."
 SERVICES_EXTRA = '''<h2>Before you book</h2><p>Read our guides on <a href="guides/palm-tree-trimming-season-california.html">when to trim palms</a>, <a href="guides/defensible-space-brush-clearance-inland-empire.html">defensible space and brush clearance</a>, and <a href="guides/tree-removal-permits-inland-empire.html">tree permits in Inland Empire cities</a>.</p>'''
 AREAS_TITLE = "Tree Service Areas: San Bernardino & Riverside County | IE Tree Quotes"
-AREAS_DESC = "Tree service quotes in 18 Inland Empire cities, including San Bernardino, Riverside, Fontana, Ontario, Corona, Moreno Valley, Redlands, and Rancho Cucamonga."
+AREAS_DESC = "Tree service quotes in 19 Inland Empire cities, including San Bernardino, Riverside, Fontana, Ontario, Corona, Moreno Valley, Redlands, and Rancho Cucamonga."
 GUIDES_TITLE = "Tree Care Guides for Inland Empire Homeowners | IE Tree Quotes"
 GUIDES_DESC = "Plain-English guides on tree removal costs, palm trimming season, defensible space, Santa Ana wind prep, permits, and hiring a licensed tree service."
 GUIDES_INTRO = "Practical, sourced answers to the questions Inland Empire homeowners ask most about their trees."
